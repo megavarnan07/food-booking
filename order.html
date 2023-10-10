@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Menu</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Restaurant Menu</h1>
+  
+  <form id="order" action="process_order.php" method="POST">
+    <h2>Select your food:</h2>
+    <div class="menu-item">
+      <input type="checkbox" name="food[]" id="food" value="burger">
+      <label>Burger ($10)</label>
+    </div>
+    <div class="menu-item">
+      <input type="checkbox" name="food[]" value="pizza">
+      <label>Pizza ($12)</label>
+    </div>
+    <div class="menu-item">
+      <input type="checkbox" name="food[]" value="pasta">
+      <label>Pasta ($8)</label>
+    </div>
+    
+    <h2>Select your drink:</h2>
+    <div class="menu-item">
+      <input type="checkbox" name="drink[]" id="drink" value="coke">
+      <label>Coke ($2)</label>
+    </div>
+    <div class="menu-item">
+      <input type="checkbox" name="drink[]" value="pepsi">
+      <label>Pepsi ($2)</label>
+    </div>
+    <div class="menu-item">
+      <input type="checkbox" name="drink[]" value="lemonade">
+      <label>Lemonade ($3)</label>
+    </div>
+    
+    <h2>Add a note:</h2>
+    <textarea name="note" id="note" placeholder="Enter any special requests..." autocomplete="off" class="input-field"></textarea>
+    
+    <input type="submit" value="Place Order">
+  </form>
+</body>
+</html>
